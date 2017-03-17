@@ -7,6 +7,8 @@ This is provider was created from the koop sample that demonstrates how to build
 
 The data source in this case is the [UK Police Street Level Crime API](https://data.police.uk/). 
 
+[License](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) 
+
 ## Files
 
 | File | | Description |
