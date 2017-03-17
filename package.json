@@ -1,7 +1,7 @@
 {
-  "name": "koop-provider-sample",
+  "name": "koop-provider-ukcrime",
   "version": "1.0.0",
-  "description": "A sample provider for koop",
+  "description": "A koop provider for uk crime",
   "main": "index.js",
   "directories": {
     "test": "test"

@@ -1,13 +1,11 @@
 [![Build Status](https://travis-ci.org/koopjs/koop-provider-sample.svg?branch=master)](https://travis-ci.org/koopjs/koop-provider-sample) [![Greenkeeper badge](https://badges.greenkeeper.io/koopjs/koop-provider-sample.svg)](https://greenkeeper.io/)
 
 
-# Koop Sample Provider
+# Koop UK Crime Provider
 
-This is a sample that demonstrates how to build a Koop Provider. Full documentation is provided [here](https://koopjs.github.io/docs/specs/provider/).
+This is provider was created from the koop sample that demonstrates how to build a Koop Provider. Full documentation is provided [here](https://koopjs.github.io/docs/specs/provider/).
 
-The data source in this case is the [TriMet Bus API](https://developer.trimet.org). You can see this provider in action [here](http://dcdev.maps.arcgis.com/home/item.html?id=2603e7e3f10742f78093edf8ea2adfd8#visualize).
-
-If you want to write your own provider, simply fork this repository or copy the contents.
+The data source in this case is the [UK Police Street Level Crime API](https://data.police.uk/). 
 
 ## Files
 
@@ -28,17 +26,13 @@ Run server:
 - `npm start`
 
 Example API Query:
-- `curl localhost:8080/sample/FeatureServer/0/query?returnCountOnly=true`
+- `curl localhost:8080/ukcrime/FeatureServer/0/query?returnCountOnly=true`
 
 Tests:
 - `npm test`
 
 ## With Docker
 
-- `docker build -t koop-provider-sample .`
-- `docker run -it -p 8080:8080 koop-provider-sample`
+- `docker build -t koop-provider-ukcrime .`
+- `docker run -it -p 8080:8080 koop-provider-ukcrime`
 
-## Publish to npm
-- run `npm init` and update the fields
-  - Choose a name like `koop-provider-foo`
-- run `npm publish`
