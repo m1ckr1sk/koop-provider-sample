@@ -22,6 +22,14 @@ Model.prototype.getData = function (req, callback) {
     const geojson = translate(body)
     // Cache data for 10 seconds at a time by setting the ttl or "Time to Live"
     geojson.ttl = 10
+
+    console.log(geojson.type)
+
+    geojson.metadata = {
+      name: `Uk Crime Data`,
+      description: `UK Street Level Crime listings proxied from https://data.police.uk/ under license https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/`
+    }
+
     // hand off the data to Koop
     callback(null, geojson)
   })
